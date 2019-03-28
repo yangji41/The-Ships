@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+</head>
+<body>
+  <script>
+    function makePhrases(){
+      var renwu = ['杨吉','孙权','顾伟豪','濮徐杰','林超凡','王诚礼','孔易飞']
+      var shijian = ['凌晨','早上','中午','晚上',]
+      var didian = ['在家','在教室','在宿舍','在厕所','在操场','在天上']
+      var huodon = ['吃饭','玩手机','睡觉','蹦迪','打王者','跟女朋友散步']
+      var phrase =('<h1>'+ suoyoubianliangzhi(renwu) + suoyoubianliangzhi(shijian) + suoyoubianliangzhi(didian) + suoyoubianliangzhi(huodon) + '</h1>')
+      document.write(phrase)
+      function suoyoubianliangzhi(array){
+        return array[Math.floor(Math.random() * array.length)]
+      }
+    }
+    makePhrases();
+  </script>
+  
+</body>
+</html>
