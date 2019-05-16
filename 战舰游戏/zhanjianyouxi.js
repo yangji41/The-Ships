@@ -45,7 +45,7 @@ var model = {
     for (var i = 0; i < this.shipLength; i++) {
       if (ship.hits[i] !== "hit") {
         count ++;
-        if (count > hits.shipLength * 0.667){
+        if (count >= model.shipLength * 0.667){
           return false;
         }
       }
